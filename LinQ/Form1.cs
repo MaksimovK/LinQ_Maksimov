@@ -3,6 +3,7 @@ namespace LinQ
     public partial class Form1 : Form
     {
         private List<Person> people;
+        List<Department> department;
         public Form1()
         {
             InitializeComponent();
@@ -11,6 +12,7 @@ namespace LinQ
         private void Form1_Load(object sender, EventArgs e)
         {
             people = new List<Person>();
+            department = new List<Department>();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,11 +35,14 @@ namespace LinQ
                         listBox1.Items.Add(line);
                     }
                 }
-
-
             }
             else MessageBox.Show("Ошибка", "Такого файла нет", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
 
         }
     }
