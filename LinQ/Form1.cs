@@ -39,6 +39,7 @@ namespace LinQ
             else MessageBox.Show("Ошибка", "Такого файла нет", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
 
+            //dasdasdasd
         }
 
         private void button2_Click(object sender, EventArgs e)
